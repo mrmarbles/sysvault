@@ -1,0 +1,33 @@
+{
+  "author": "Brian Carr <bcarr14@gmail.com>",
+  "name": "sysvault",
+  "description": "Safe and secure simple value persistence.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mrmarbles/sysvault.git"
+  },
+  "main": "index",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "easycrypto": "0.0.2"
+  },
+  "devDependencies": {
+    "nodeunit": ">= 0.7.4"
+  },
+  "scripts": {
+    "test": "nodeunit test/"
+  },
+  "keywords": [
+    "file system",
+    "file",
+    "system",
+    "encryption",
+    "decryption",
+    "encrypt",
+    "decrypt"
+  ],
+  "license": "MIT"
+}
