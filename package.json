@@ -9,7 +9,7 @@
   },
   "main": "index",
   "engines": {
-    "node": "*"
+    "node": ">= 0.8.x"
   },
   "dependencies": {
     "easycrypto": "0.0.2"
