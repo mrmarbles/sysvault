@@ -1,7 +1,7 @@
 {
   "author": "Brian Carr <bcarr14@gmail.com>",
   "name": "sysvault",
-  "description": "Safe and secure simple value persistence.",
+  "description": "Safe and secure file system key/value store.",
   "version": "0.0.1",
   "repository": {
     "type": "git",

@@ -2,3 +2,4 @@
 *.iml
 sysvault
 node_modules/
+.sysvault

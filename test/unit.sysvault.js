@@ -9,11 +9,11 @@ module.exports = {
       pwd:'test'
     });
 
-    test.ok(fs.existsSync('sysvault'));
+    test.ok(fs.existsSync('.sysvault'));
 
     test.done();
 
-    fs.unlinkSync('sysvault');
+    fs.unlinkSync('.sysvault');
 
   },
 
@@ -29,7 +29,7 @@ module.exports = {
 
     test.done();
 
-    fs.unlinkSync('sysvault');
+    fs.unlinkSync('.sysvault');
 
   }
 

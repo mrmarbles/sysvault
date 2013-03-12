@@ -1,7 +1,9 @@
 sysvault
 ========
 
-Safe and secure simple value persistence.
+[![Build Status](https://secure.travis-ci.org/mrmarbles/sysvault.png)](http://travis-ci.org/mrmarbles/sysvault)
+
+Safe and secure file system key/value store.
 
 Installation
 ---------------
