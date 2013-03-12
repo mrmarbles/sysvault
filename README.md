@@ -1,7 +1,7 @@
 sysvault
 ========
 
-[![Build Status](https://secure.travis-ci.org/mrmarbles/sysvault.png)](http://travis-ci.org/mrmarbles/sysvault)
+[![Build Status](https://travis-ci.org/mrmarbles/sysvault.png?branch=master)](https://travis-ci.org/mrmarbles/sysvault)
 
 Safe and secure file system key/value store.
 
