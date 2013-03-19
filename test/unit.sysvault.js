@@ -3,34 +3,55 @@ var factory = require('../lib/sysvault'),
 
 module.exports = {
 
-  "Test should initialize default vault file": function(test) {
-
-    var vault = factory.getInstance({
+  setUp: function(callback) {
+    this.vault = factory.getInstance({
       pwd:'test'
     });
+    callback();
+  },
+
+  "Test should initialize default vault file": function(test) {
 
     test.ok(fs.existsSync('.sysvault'));
 
     test.done();
 
-    fs.unlinkSync('.sysvault');
-
   },
 
   "Test should put and get value": function(test) {
 
-    var vault = factory.getInstance({
-      pwd:'test'
-    });
+    this.vault.put('hello', 'world');
 
-    vault.put('hello', 'world');
-
-    test.equals('world', vault.get('hello'));
+    test.equals('world', this.vault.get('hello'));
 
     test.done();
 
-    fs.unlinkSync('.sysvault');
+  },
 
+  "Test should flush synchronously without callback": function(test) {
+
+    this.vault.put('hello', 'world');
+
+    this.vault.flush();
+
+    test.done();
+
+  },
+
+  "Test should flush asynchronously with callback": function(test) {
+
+    this.vault.put('hello', 'world');
+
+    this.vault.flush(function(err) {
+      test.ok(!err);
+      test.done();
+    });
+
+  },
+
+  tearDown: function(callback) {
+    fs.unlinkSync('.sysvault');
+    callback();
   }
 
 };
